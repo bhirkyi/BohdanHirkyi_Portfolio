@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Archive</title>
-      <link rel="icon" type="image/png" href="images/favicon.png">
-      <link rel="stylesheet" href="style.css">
-      <script src="js/main.js"></script>
-   </head>
-   <body>
-      <div id="archive">
-         <div class="container">
-            <a style="text-decoration: none;" href="index.html">
-               <p class="gb-btn">Go Back</p>
-            </a>
-            <h1 class="sub-title">My Projects</h1>
-            <div class="archive-list">
-               <table>
-                  <tr>
-                     <th>Year</th>
-                     <th>Project Name</th>
-                     <th>Client</th>
-                     <th>Technology</th>
-                     <th>Link/Sample</th>
-                  </tr>
-                  <tr class="content-list">
-                     <td>2024</td>
-                     <td>DoggyCare</td>
-                     <td>LouLou'sDoggyCare</td>
-                     <td>HTML, CSS, JavaScript, SASS</td>
-                     <td><a href="#" class="view-sample" data-modal="myModal4" onclick="openPopup('myModal4')" >View Sampel</a> </td>
-                  </tr>
-                  <tr class="content-list">
-                     <td>2023/2024</td>
-                     <td>3D Library Web App</td>
-                     <td>Diploma Project for a Client</td>
-                     <td>C#, SQL, ASP.NET Core, HTML, CSS, JavaScript, Bootstrap, Blazor/MatBlazor, LINQ</td>
-                     <td><a href="#" class="view-sample"  data-modal="myModal1" onclick="openPopup('myModal1')">View Sampel</a> </td>
-                  </tr>
-                  <tr class="content-list">
-                     <td>2023</td>
-                     <td>Ebike's Web App</td>
-                     <td>Class Project</td>
-                     <td>C#, ASP.NET Core, HTML, Bootstrap, Blazor/MatBlazor, LINQ</td>
-                     <td><a href="#" class="view-sample" data-modal="myModal3" onclick="openPopup('myModal3')">View Sampel</a> </td>
-                  </tr>
-                  <tr class="content-list">
-                     <td>2022</td>
-                     <td>System Analysis 24 hour Final Project</td>
-                     <td> </td>
-                     <td>SQL, SSMS, VISIO</td>
-                     <td><a href="#" class="view-sample"  data-modal="myModal2" onclick="openPopup('myModal2')">View Sampel</a> </td>
-                  </tr>
-                  <tr class="content-list">
-                     <td>2021</td>
-                     <td>Humbel Pie Restaurant</td>
-                     <td> </td>
-                     <td>HTML, CSS, Photoshop</td>
-                     <td><a href="https://humblepieco.netlify.app/" target="_blank" class="view-sample">View Sampel</a> </td>
-                  </tr>
-               </table>
-            </div>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Archive</title>
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <link rel="stylesheet" href="style.css">
+   <script src="js/main.js"></script>
+</head>
+
+<body>
+   <div id="archive">
+      <div class="container">
+         <a style="text-decoration: none;" href="index.html">
+            <p class="gb-btn">Go Back</p>
+         </a>
+         <h1 class="sub-title">My Projects</h1>
+         <div class="archive-list">
+            <table>
+               <tr>
+                  <th>Year</th>
+                  <th>Project Name</th>
+                  <th>Client</th>
+                  <th>Technology</th>
+                  <th>Link/Sample</th>
+               </tr>
+               <tr class="content-list">
+                  <td>2024</td>
+                  <td>DoggyCare</td>
+                  <td>LouLou'sDoggyCare</td>
+                  <td>HTML, CSS, JavaScript, SASS</td>
+                  <td><a href="https://lousdoggydaycare.netlify.app/" target="_blank" class="view-sample">Vist
+                        Site</a> </td>
+               </tr>
+               <tr class="content-list">
+                  <td>2023/2024</td>
+                  <td>3D Library Web App</td>
+                  <td>Diploma Project for a Client</td>
+                  <td>C#, SQL, ASP.NET Core, HTML, CSS, JavaScript, Bootstrap, Blazor/MatBlazor, LINQ</td>
+                  <td><a href="#" class="view-sample" data-modal="myModal1" onclick="openPopup('myModal1')">View
+                        Sampel</a> </td>
+               </tr>
+               <tr class="content-list">
+                  <td>2023</td>
+                  <td>Ebike's Web App</td>
+                  <td>Class Project</td>
+                  <td>C#, ASP.NET Core, HTML, Bootstrap, Blazor/MatBlazor, LINQ</td>
+                  <td><a href="#" class="view-sample" data-modal="myModal3" onclick="openPopup('myModal3')">View
+                        Sampel</a> </td>
+               </tr>
+               <tr class="content-list">
+                  <td>2022</td>
+                  <td>System Analysis 24 hour Final Project</td>
+                  <td> </td>
+                  <td>SQL, SSMS, VISIO</td>
+                  <td><a href="#" class="view-sample" data-modal="myModal2" onclick="openPopup('myModal2')">View
+                        Sampel</a> </td>
+               </tr>
+               <tr class="content-list">
+                  <td>2021</td>
+                  <td>Humbel Pie Restaurant</td>
+                  <td> </td>
+                  <td>HTML, CSS, Photoshop</td>
+                  <td><a href="https://humblepieco.netlify.app/" target="_blank" class="view-sample">Vist Site</a>
+                  </td>
+               </tr>
+            </table>
          </div>
       </div>
-      <div class="modal" id="myModal1">
-         <div class="modal-content">
-            <span class="close-popup" data-modal="myModal1" onclick="closePopup('myModal1')">&times;</span>
-            <h2>3D Library Web Application</h2>
-            <img src="images/3Dlib.gif" alt="ProjectSample">
-            <p>Contact for more information</p>
-         </div>
+   </div>
+   <div class="modal" id="myModal1">
+      <div class="modal-content">
+         <span class="close-popup" data-modal="myModal1" onclick="closePopup('myModal1')">&times;</span>
+         <h2>3D Library Web Application</h2>
+         <img src="images/3Dlib.gif" alt="ProjectSample">
+         <p>Contact for more information</p>
       </div>
-      <div class="modal" id="myModal2">
-         <div class="modal-content">
-            <span class="close-popup" data-modal="myModal2" onclick="closePopup('myModal2')">&times;</span>
-            <h2>System Analysis 24 hour Final Project</h2>
-            <embed src="images/WaterMarkedSAD.pdf#toolbar=0" width="600" height="600">
-            <p>Contact for more information.</p>
-         </div>
+   </div>
+   <div class="modal" id="myModal2">
+      <div class="modal-content">
+         <span class="close-popup" data-modal="myModal2" onclick="closePopup('myModal2')">&times;</span>
+         <h2>System Analysis 24 hour Final Project</h2>
+         <embed src="images/WaterMarkedSAD.pdf#toolbar=0" width="600" height="600">
+         <p>Contact for more information.</p>
       </div>
-      <div class="modal" id="myModal3">
-         <div class="modal-content">
-            <span class="close-popup" data-modal="myModal3" onclick="closePopup('myModal3')">&times;</span>
-            <h2>Ebikes</h2>
-            <img src="images/ebikes.gif" alt="ProjectSample">
-            <p>Contact for more information.</p>
-         </div>
+   </div>
+   <div class="modal" id="myModal3">
+      <div class="modal-content">
+         <span class="close-popup" data-modal="myModal3" onclick="closePopup('myModal3')">&times;</span>
+         <h2>Ebikes</h2>
+         <img src="images/ebikes.gif" alt="ProjectSample">
+         <p>Contact for more information.</p>
       </div>
-      <div class="modal" id="myModal4">
+   </div>
+   <!--no longer needed
+            <div class="modal" id="myModal4">
          <div class="modal-content">
             <span class="close-popup" data-modal="myModal2" onclick="closePopup('myModal4')">&times;</span>
             <h2>Lou'sDoggyCare</h2>
@@ -96,5 +104,7 @@
             <p>Website link is not available at the moment</p>
          </div>
       </div>
-   </body>
+      -->
+</body>
+
 </html>

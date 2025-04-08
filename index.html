@@ -1,173 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>BHirkyi</title>
-      <link rel="icon" type="image/png" href="images/favicon.png">
-      <link rel="stylesheet" href="style.css">
-      <script src="js/main.js"></script>
-   </head>
-   <body>
-      <div id="header">
-         <div class="container">
-            <nav>
-               <img class="logo" src="images/logo.png" alt="logo">
-               <ul id="sidemenu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="images/Bohdan-Hirkyi-Resume.pdf" target="_blank">Resume</a></li>
-                  <li><img class="close" src="images/close.png" onclick="closemenu()" alt="close"></li>
-               </ul>
-               <img class="menu" src="images/menu.png" onclick="openmenu()" alt="menu">
-            </nav>
-            <div class="header-text">
-               <p>Hey there! I'm</p>
-               <h1>Bohdan Hirkyi<br>And I'm a  <span>Software Developer</span>.</h1>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BHirkyi</title>
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <link rel="stylesheet" href="style.css">
+   <script src="js/main.js"></script>
+</head>
+
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="images/Bohdan-Hirkyi-Resume.pdf" target="_blank">Resume</a></li>
+               <li><img class="close" src="images/close.png" onclick="closemenu()" alt="close"></li>
+            </ul>
+            <img class="menu" src="images/menu.png" onclick="openmenu()" alt="menu">
+         </nav>
+         <div class="header-text">
+            <p>Hey there! I'm</p>
+            <h1>Bohdan Hirkyi<br>And I'm a <span>Software Developer</span>.</h1>
+         </div>
+      </div>
+   </div>
+   <!--ABOUT-->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/bs_pciture.jpg" alt="MyPicture">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>My name is Bohdan, and I'm a Software Developer specializing in front-end, back-end, design,
+                  and database analysis/design. I currently live in Alberta, Canada. I recently earned my diploma
+                  in Digital Media and IT with a focus on Computer Software Development from NAIT
+                  (Northern Alberta Institute of Technology).<br> <br> I'm passionate about the entire software
+                  development
+                  life cycle, including putting ideas into well-structured projects with complete design implementation.
+                  <br> <br> <a class="view-sample" href="images/Bohdan-Hirkyi-Resume.pdf" target="_blank"> My Resume</a>
+               </p>
+               <div class="tab-tittle">
+                  <p class="tab-links active-link" data-tabname="skills" onclick="opentab(event, 'skills')">Skills
+                  </p>
+                  <p class="tab-links" data-tabname="education" onclick="opentab(event, 'education')">Education
+                  </p>
+                  <p class="tab-links" data-tabname="experience" onclick="opentab(event, 'experience')">Experience
+                  </p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li>
+                        <span class="skill-name">Back-end Development</span><br> Developing web and window form
+                        applications from the
+                        beginning to the end.<br><span class="f-technology">Technology I use:</span> C#, .NET Framewrok,
+                        ASP.NET, Node.js, SQL Server, LINQPad
+                        <div class="progress">
+                           <div class="progress-value" style="width: 90%;">
+                              <p>90%</p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Front-end Development</span><br>Creating visually and intuitive user
+                        interfaces through a combination of technologies, with a focus on best principles of UX/UI.
+                        <br><span class="f-technology">Technology I use:</span> HTML, CSS,
+                        JavaScript, React, SASS, Bootstrap, jQuery, Angular, Blazor
+                        <div class="progress">
+                           <div class="progress-value" style="width: 80%;">
+                              <p>80%</p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Database</span><br>Designing, creating, analysing and maintaining
+                        databases.<br>
+                        <span class="f-technology">Technology I use:</span> SQL, SSMS, VISIO
+                        <div class="progress">
+                           <div class="progress-value" style="width: 65%;">
+                              <p>65%</p>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <span class="skill-name">Other Programing Skills</span><br>Langueges I worked in and skills I
+                        developed: C++, Java, Dart, MatBalzor, Docker, JUnit, GitHub
+                        <div class="progress">
+                           <div class="progress-value" style="width: 50%;">
+                              <p>50%</p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2021-2023</span><br>NAIT (Northern Alberta Institute of Technology) Digital Media and IT
+                        - Computer Software Development</li>
+                     <li><span>2018-2021</span><br>St. Francis Havier High School, Edmonton AB</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>2024</span><br>Front-end Developer for <span>LouLou'sDoggyCare</span> <br><br>
+                        <span>Specifications:</span> The client asked to build a Website for their Dog Daycare from
+                        scratch. Simple website for a
+                        small business with a fully functional signup form. Using all my front-end skills. <br>
+                        <span>Link:</span> <a class="link" href="#projects" data-modal="myModal2"
+                           onclick="openPopup('myModal2')">Vist Site</a>
+                     </li>
+                     <li><span>2023</span><br>Front-end / Back-end Developer for <span>Diploma Project for a
+                           Client</span> <br> <br> <span>Specifications:</span>The client asked to build a 3D library
+                        Web Application from scratch. Features that were
+                        asked to build; search by multiple factors and display, upload page, login page <br>
+                        <span>Link:</span> <a href="#projects" class="link" data-modal="myModal1"
+                           onclick="openPopup('myModal1')">View Sample</a>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
-      <!--ABOUT-->
-      <div id="about">
-         <div class="container">
-            <div class="row">
-               <div class="about-col-1">
-                  <img src="images/bs_pciture.jpg" alt="MyPicture">
-               </div>
-               <div class="about-col-2">
-                  <h1 class="sub-title">About Me</h1>
-                  <p>My name is Bohdan, and I'm a Software Developer specializing in front-end, back-end, design, 
-                     and database analysis/design. I currently live in Alberta, Canada. I recently earned my diploma
-                     in Digital Media and IT with a focus on Computer Software Development from NAIT 
-                     (Northern Alberta Institute of Technology).<br> <br> I'm passionate about the entire software development 
-                     life cycle, including putting ideas into well-structured projects with complete design implementation.
-                     <br> <br> <a class="view-sample" href="images/Bohdan-Hirkyi-Resume.pdf" target="_blank"> My Resume</a>
-                  </p>
-                  <div class="tab-tittle">
-                     <p class="tab-links active-link" data-tabname="skills" onclick="opentab(event, 'skills')">Skills
-                     </p>
-                     <p class="tab-links" data-tabname="education" onclick="opentab(event, 'education')">Education
-                     </p>
-                     <p class="tab-links" data-tabname="experience" onclick="opentab(event, 'experience')">Experience
-                     </p>
-                  </div>
-                  <div class="tab-contents active-tab" id="skills">
-                     <ul>
-                        <li>
-                           <span class="skill-name">Back-end Development</span><br> Developing web and window form applications from the 
-                           beginning to the end.<br><span class="f-technology">Technology I use:</span> C#, .NET Framewrok, ASP.NET, Node.js, SQL Server, LINQPad
-                           <div class="progress">
-                              <div class="progress-value" style="width: 90%;">
-                                 <p>90%</p>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <span class="skill-name">Front-end Development</span><br>Creating visually and intuitive user interfaces through a combination of technologies, with a focus on best principles of UX/UI. 
-                           <br><span class="f-technology">Technology I use:</span> HTML, CSS, 
-                           JavaScript, React, SASS, Bootstrap, jQuery, Angular, Blazor
-                           <div class="progress">
-                              <div class="progress-value" style="width: 80%;">
-                                 <p>80%</p>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <span class="skill-name">Database</span><br>Designing, creating, analysing and maintaining databases.<br>
-                           <span class="f-technology">Technology I use:</span> SQL, SSMS, VISIO 
-                           <div class="progress">
-                              <div class="progress-value" style="width: 65%;">
-                                 <p>65%</p>
-                              </div>
-                           </div>
-                        </li>
-                        <li>
-                           <span class="skill-name">Other Programing Skills</span><br>Langueges I worked in and skills I developed: C++, Java, Dart, MatBalzor, Docker, JUnit, GitHub                                 
-                           <div class="progress">
-                              <div class="progress-value" style="width: 50%;">
-                                 <p>50%</p>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="tab-contents" id="education">
-                     <ul>
-                        <li><span>2021-2023</span><br>NAIT (Northern Alberta Institute of Technology) Digital Media and IT - Computer Software Development</li>
-                        <li><span>2018-2021</span><br>St. Francis Havier High School, Edmonton AB</li>
-                     </ul>
-                  </div>
-                  <div class="tab-contents" id="experience">
-                     <ul>
-                        <li><span>2024</span><br>Front-end Developer for <span>LouLou'sDoggyCare</span> <br><br> <span>Specifications:</span> The client asked to build a Website for their Dog Daycare from scratch. Simple website for a
-                           small business with a  fully functional signup form. Using all my front-end skills. <br> <span>Link:</span> <a class="link" href="#projects" data-modal="myModal2"  onclick="openPopup('myModal2')">Vist Site</a>
-                        </li>
-                        <li><span>2023</span><br>Front-end / Back-end Developer for <span>Diploma Project for a Client</span> <br> <br> <span>Specifications:</span>The client asked to build a 3D library Web Application from scratch. Features that were
-                           asked to build; search by multiple factors and display, upload page, login page <br> <span>Link:</span> <a href="#projects" class="link" data-modal="myModal1"  onclick="openPopup('myModal1')">View Sample</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+   </div>
+   <div id="projects">
+      <div class="container">
+         <h1 class="sub-title">My Projects</h1>
+         <div class="projects-list">
+            <div>
+               <img src="images/thumN-3D.jpg" alt="">
+               <h2>3D Library Web Application</h2>
+               <h3>Back-end/Front-end Developer</h3>
+               <p> 3D library web application, incorporating specific features such as a search functionality with
+                  multiple filters,
+                  an upload page, and a login page.<br> <br> My primary responsibility was to build the entire search
+                  functionality
+                  and search page. Additionally, I played a key role in the overall design of the application, database
+                  development,
+                  and architecture, and provided assistance to my team members with their project tasks
+               </p>
+               <a href="#projects" class="view-sample" data-modal="myModal1" onclick="openPopup('myModal1')">View
+                  Sample</a>
+            </div>
+            <div>
+               <img src="images/DoggyCare.png" alt="DoggyCare">
+               <h2>Lou'sDoggyCare</h2>
+               <h3>Front-end Developer</h3>
+               <p>This website was custom built for the client's private dog daycare.
+                  They wanted a simple website with a custom signup form.<br> <br> My responsibility was to prepare
+                  mockups for the client's approval.
+                  Follow approved mockups of the design and functionality and build a clean HTML and CSS with
+                  JavaScript. Develop a fully functional sign-up form. I also assisted the client with hosting options.
+               </p>
+               <a href="https://lousdoggydaycare.netlify.app/" target="_blank" class="view-sample">Vist Site</a>
+            </div>
+            <div>
+               <img src="images/humblepie.JPG" alt="humblepie">
+               <h2>Humbel Pie Restaurant</h2>
+               <h3>Front-end Developer</h3>
+               <p>The website is for a bakery stand that includes; a custom layout, a PDF version of the menu, and a
+                  custom signup form. <br> <br>
+                  I used Photoshop to match the design, then created a clean HTML structure and a straightforward,
+                  well-formatted CSS for a clear and organized presentation.
+               </p>
+               <a href="https://humblepieco.netlify.app/" target="_blank" class="view-sample">Vist Site</a>
             </div>
          </div>
       </div>
-      <div id="projects">
-         <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="projects-list">
-               <div>
-                  <img src="images/thumN-3D.jpg" alt="">
-                  <h2>3D Library Web Application</h2>
-                  <h3>Back-end/Front-end Developer</h3>
-                  <p> 3D library web application, incorporating specific features such as a search functionality with multiple filters,
-                     an upload page, and a login page.<br> <br> My primary responsibility was to build the entire search functionality 
-                     and search page. Additionally, I played a key role in the overall design of the application, database development, 
-                     and architecture, and provided assistance to my team members with their project tasks
-                  </p>
-                  <a href="#projects" class="view-sample" data-modal="myModal1"  onclick="openPopup('myModal1')">View Sample</a>
-               </div>
-               <div>
-                  <img src="images/DoggyCare.png" alt="DoggyCare">
-                  <h2>Lou'sDoggyCare</h2>
-                  <h3>Front-end Developer</h3>
-                  <p>This website was custom built for the client's private dog daycare. 
-                     They wanted a simple website with a custom signup form.<br> <br> My responsibility was to prepare mockups for the client's approval.
-                     Follow approved mockups of the design and functionality and build a clean HTML and CSS with JavaScript. Develop a fully functional sign-up form. I also assisted the client  with hosting options.   
-                  </p>
-                  <a href="#projects" class="view-sample" data-modal="myModal2"  onclick="openPopup('myModal2')">Vist Site</a>
-               </div>
-               <div>
-                  <img src="images/humblepie.JPG" alt="humblepie">
-                  <h2>Humbel Pie Restaurant</h2>
-                  <h3>Front-end Developer</h3>
-                  <p>The website is for a bakery stand that includes; a custom layout, a PDF version of the menu, and a custom signup form. <br> <br>
-                     I used Photoshop to match the design, then created a clean HTML structure and a straightforward, 
-                     well-formatted CSS for a clear and organized presentation.
-                  </p>
-                  <a href="https://humblepieco.netlify.app/" target="_blank" class="view-sample">Vist Site</a>
-               </div>
-            </div>
-         </div>
-         <a href="project-archive.html" class="btn btn2">See More Projects</a>
+      <a href="project-archive.html" class="btn btn2">See More Projects</a>
+   </div>
+   <div id="contact">
+      <div class="copyright">
+         <a href="mailto:hirkyi.bohdan@gmail.com"><img src="images/email.png" alt="LinkedIn"></a>
+         <a href="https://www.linkedin.com/in/bohdan-hirkyi/" target="_blank"><img src="images/linkedIn.png"
+               alt="Email"></a>
+         <p>© Bohdan Hirkyi 2024</p>
       </div>
-      <div id="contact">
-         <div class="copyright">
-            <a href="mailto:hirkyi.bohdan@gmail.com"><img src="images/email.png" alt="LinkedIn"></a>
-            <a href="https://www.linkedin.com/in/bohdan-hirkyi/" target="_blank"><img src="images/linkedIn.png" alt="Email"></a>
-            <p>© Bohdan Hirkyi 2024</p>
-         </div>
+   </div>
+   <div class="modal" id="myModal1">
+      <div class="modal-content">
+         <span class="close-popup" data-modal="myModal1" onclick="closePopup('myModal1')">&times;</span>
+         <h2>3D Library Web Application</h2>
+         <img src="images/3Dlib.gif" alt="SampleProject">
+         <p>Contact for more information</p>
       </div>
-      <div class="modal" id="myModal1">
-         <div class="modal-content">
-            <span class="close-popup" data-modal="myModal1" onclick="closePopup('myModal1')">&times;</span>
-            <h2>3D Library Web Application</h2>
-            <img src="images/3Dlib.gif" alt="SampleProject">
-            <p>Contact for more information</p>
-         </div>
-      </div>
-      <div class="modal" id="myModal2">
+   </div>
+   <!--
+      no longer needed
+            <div class="modal" id="myModal2">
          <div class="modal-content">
             <span class="close-popup" data-modal="myModal2" onclick="closePopup('myModal2')">&times;</span>
             <h2>Lou'sDoggyCare</h2>
@@ -175,5 +202,7 @@
             <p>Website link is not available at the moment</p>
          </div>
       </div>
-   </body>
+      -->
+</body>
+
 </html>
